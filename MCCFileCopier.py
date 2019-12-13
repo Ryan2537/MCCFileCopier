@@ -31,9 +31,13 @@ class Mod():
 #create an instance for each mod
 forge = Mod('MCC-WindowsNoEditor.pak', 'MCC/Content/Paks/')
 forgeMap = Mod('forge_halo.map', 'haloreach/maps/')
+unlock = Mod('unlockdb.xml', 'data/ui/')
+unearthedMap = Mod('cex_prisoner.map', 'haloreach/maps/')
+unearthedDll = Mod('haloreach.dll', 'haloreach/')
+noIntro = Mod('FMS_logo_microsoft_7_1_.bk2', 'MCC/Content/Movies')
 
 #make a list of all mods
-modList = [forge, forgeMap]
+modList = [forge, forgeMap, unlock, unearthedMap, unearthedDll, noIntro]
 
 def verifyFiles():
     if not os.path.isdir(steamdir + ModFolder):
